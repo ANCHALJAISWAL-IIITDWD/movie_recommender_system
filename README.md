@@ -131,13 +131,27 @@ streamlit run app.py
 
 ### Home Screen
 
-_Add screenshot here_
+![alt text](<Screenshot 2026-06-12 180147.png>)
 
 ### Recommendation Results
 
-_Add screenshot here_
+![alt text](<Screenshot 2026-06-12 180245.png>)
 
 ---
+## ⚠️ Poster Retrieval Note
+
+Movie posters are fetched dynamically using The Movie Database (TMDB) API.
+
+In some cases, poster images may not be retrieved due to temporary network interruptions, API rate limits, or connection-related errors such as:
+
+```python
+('Connection aborted.', ConnectionResetError(10054,
+'An existing connection was forcibly closed by the remote host'))
+```
+
+To ensure a smooth user experience, a fallback poster image has been implemented. Whenever a poster cannot be fetched successfully, the application automatically displays a default placeholder image instead of leaving the poster section blank.
+
+This improves the robustness of the application and prevents recommendation results from being affected by external API connectivity issues.
 
 ## 📈 Future Improvements
 
