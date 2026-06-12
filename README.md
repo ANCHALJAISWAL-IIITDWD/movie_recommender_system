@@ -131,11 +131,11 @@ streamlit run app.py
 
 ### Home Screen
 
-![alt text](<Screenshot 2026-06-12 180147.png>)
+![Home](images/home.png)
 
 ### Recommendation Results
 
-![alt text](<Screenshot 2026-06-12 180245.png>)
+![recommend](images/recmmendation.png)
 
 ---
 ## ⚠️ Poster Retrieval Note
