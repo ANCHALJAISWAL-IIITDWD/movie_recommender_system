@@ -153,6 +153,14 @@ To ensure a smooth user experience, a fallback poster image has been implemented
 
 This improves the robustness of the application and prevents recommendation results from being affected by external API connectivity issues.
 
+## Deployment Notes
+
+The similarity matrix used for movie recommendations is generated during model development and stored in a large `similarity.pkl` file.
+
+Since the file exceeds GitHub's recommended repository size, it is not included in the repository. During deployment, the application automatically downloads the required similarity matrix from cloud storage and loads it at runtime.
+
+This approach keeps the repository lightweight while preserving the recommendation functionality.
+
 ## 📈 Future Improvements
 
 - Collaborative Filtering
